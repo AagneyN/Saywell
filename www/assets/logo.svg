@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Saywell">
+  <defs>
+    <linearGradient id="sw-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D5EF5"/>
+      <stop offset="1" stop-color="#2BD9A4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#sw-g)"/>
+  <path d="M140 124h232a44 44 0 0 1 44 44v140a44 44 0 0 1-44 44H244l-70 58v-58h-34a44 44 0 0 1-44-44V168a44 44 0 0 1 44-44z" fill="#fff"/>
+  <g stroke="#5B4EE6" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="164" y1="224" x2="164" y2="252"/>
+    <line x1="214" y1="194" x2="214" y2="282"/>
+    <path d="M262 240l36 38l70-94" stroke="#20C795"/>
+  </g>
+</svg>

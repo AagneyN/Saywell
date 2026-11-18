@@ -1,0 +1,57 @@
+{
+  "name": "saywell",
+  "productName": "Saywell",
+  "version": "1.0.0",
+  "description": "Private, crash-proof AI voice dictation: speak, get polished text on your clipboard, never lose a word.",
+  "type": "module",
+  "main": "electron/main.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
+    "@capacitor/clipboard": "^8.0.1",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/preferences": "^8.0.1",
+    "@huggingface/transformers": "^4.3.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/ios": "^8.6.2",
+    "electron": "^45.3.4",
+    "esbuild": "^0.28.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "onnxruntime-node": false,
+    "protobufjs": false
+  },
+  "scripts": {
+    "postinstall": "node scripts/vendor.js",
+    "vendor": "node scripts/vendor.js",
+    "icons": "electron scripts/make-icons.js",
+    "start": "electron .",
+    "desktop": "electron .",
+    "web": "node server.js",
+    "test": "node --test tests/",
+    "selftest": "node scripts/selftest.js",
+    "mobile:sync": "npx cap sync",
+    "mobile:android": "npx cap add android && node scripts/mobile-permissions.js && npx cap sync android",
+    "mobile:ios": "npx cap add ios && node scripts/mobile-permissions.js && npx cap sync ios"
+  },
+  "keywords": [
+    "dictation",
+    "speech-to-text",
+    "whisper",
+    "claude",
+    "electron",
+    "capacitor",
+    "privacy",
+    "encryption",
+    "pwa"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

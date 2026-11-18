@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Saywell</string>
+    <string name="title_activity_main">Saywell</string>
+    <string name="package_name">app.saywell.mobile</string>
+    <string name="custom_url_scheme">app.saywell.mobile</string>
+</resources>
